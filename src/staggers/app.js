@@ -22,7 +22,7 @@ gsap.to(".box", {
     borderRadius: 6,
     duration: 1,
     y: -100,
-    ease: "power1.inOut",
+    ease: "expo.inOut",
     yoyo: true,
     repeat: -1,
     stagger: { amount: 2, from: 0 },
