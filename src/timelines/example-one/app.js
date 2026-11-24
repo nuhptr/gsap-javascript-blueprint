@@ -11,10 +11,7 @@ import gsap from "gsap"
  * `power1.inOut` untuk semua langkah animasi berantai.
  */
 const tl = gsap.timeline({
-    defaults: {
-        duration: 1,
-        ease: "power1.inOut",
-    },
+    defaults: { duration: 1, ease: "power1.inOut" },
 })
 
 /**
@@ -25,23 +22,8 @@ const tl = gsap.timeline({
  * 4. Memindahkan `.box1` secara instan ke kanan (`x: 200`) menggunakan `.set()`.
  * 5. Memunculkan kembali `.box1` ke ukuran dan opasitas penuh.
  */
-tl.to(".box1", {
-    scale: 0,
-    opacity: 0,
-    delay: 0.5,
-})
-    .to(".box2", {
-        x: -200,
-    })
-    .to(".box3", {
-        x: -200,
-        borderRadius: 0,
-        rotate: 360,
-    })
-    .set(".box1", {
-        x: 200,
-    })
-    .to(".box1", {
-        scale: 1,
-        opacity: 1,
-    })
+tl.to(".box1", { scale: 0, opacity: 0, delay: 0.5 })
+    .to(".box2", { x: -200 })
+    .to(".box3", { x: -200, borderRadius: 0, rotate: 360 })
+    .set(".box1", { x: 200 })
+    .to(".box1", { scale: 1, opacity: 1 })
