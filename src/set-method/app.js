@@ -28,5 +28,5 @@ gsap.to(".box", {
     y: 100,
     yoyo: true,
     repeat: -1,
-    ease: "power2.inOut",
+    ease: "expo.inOut",
 })
