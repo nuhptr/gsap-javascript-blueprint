@@ -1,0 +1,6 @@
+@import "tailwindcss";
+
+@theme {
+    --font-editorial: "Roboto", ui-sans-serif, system-ui, sans-serif;
+    --font-display: "Kumar One Outline", cursive;
+}
