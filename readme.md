@@ -36,7 +36,7 @@ gsap/
     ├── simple-project/         # Implementasi hero & editorial layout dengan timeline
     ├── staggers/               # Pengaturan jeda berurutan antar elemen
     ├── styles/
-    │   └── main.css            # Entry Tailwind CSS v4 & konfigurasi @theme font
+    │   └── main.css            # Entry Tailwind CSS v4 & konfigurasi @theme (font & warna)
     ├── timelines/
     │   ├── example-one/        # Chaining .to() dan .set() dengan defaults
     │   └── example-two/        # Sinkronisasi urutan dengan position parameter
