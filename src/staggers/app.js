@@ -12,23 +12,18 @@ import gsap from "gsap"
  * Menetapkan bentuk awal seluruh `.box` menjadi persegi (`borderRadius: 0`)
  * sebelum animasi bergelombang dimulai.
  */
-gsap.set(".box", {
-    borderRadius: 0,
-})
+gsap.set(".box", { borderRadius: 0 })
 
 /**
  * Menganimasikan seluruh `.box` ke atas sambil membulatkan sudutnya secara
  * berurutan dan berulang bolak-balik menggunakan konfigurasi `stagger`.
  */
 gsap.to(".box", {
-    borderRadius: 50,
+    borderRadius: 6,
     duration: 1,
     y: -100,
     ease: "power1.inOut",
     yoyo: true,
     repeat: -1,
-    stagger: {
-        amount: 2,
-        from: 0,
-    },
+    stagger: { amount: 2, from: 0 },
 })

@@ -14,8 +14,8 @@ import gsap from "gsap"
 gsap.from(".box1", {
     y: -180,
     opacity: 0,
-    duration: 2,
-    ease: "power2.out",
+    duration: 3,
+    ease: "elastic.out",
     repeat: -1,
     yoyo: true,
 })
@@ -32,7 +32,7 @@ gsap.fromTo(
         opacity: 1,
         y: -180,
         duration: 2,
-        ease: "linear",
+        ease: "expo.inOut",
         borderRadius: 0,
         repeat: -1,
         yoyo: true,
