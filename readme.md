@@ -28,6 +28,9 @@ gsap/
 ├── vite.config.js              # Konfigurasi Vite MPA & plugin @tailwindcss/vite
 ├── index.html                  # Halaman indeks navigasi seluruh contoh
 ├── readme.md                   # Dokumentasi utama
+├── AGENTS.md                   # Panduan & konvensi untuk agen/pengembang
+├── docs/
+│   └── conventions.md          # Konvensi lengkap (sumber kebenaran)
 └── src/
     ├── controlling-tweens/     # Kontrol playback tween via UI button
     ├── from-and-fromto/        # Perbandingan gsap.from() dan gsap.fromTo()
@@ -67,6 +70,8 @@ npm run dev
 
 Buka URL lokal yang ditampilkan di terminal (umumnya `http://localhost:5173`) untuk mengakses halaman indeks beserta seluruh topik.
 
+> **Catatan penting:** Proyek ini memakai Tailwind CSS v4 yang di-compile oleh plugin `@tailwindcss/vite`. Selalu akses halaman melalui dev server Vite. Membuka `index.html` langsung lewat `file://` atau Live Server statis akan membuat class Tailwind tampak "tidak terpasang" karena CSS-nya tidak diproses oleh Vite. Tailwind v4 juga tidak memakai `tailwind.config.js` — konfigurasi warna/font ada di blok `@theme` pada [`src/styles/main.css`](./src/styles/main.css).
+
 ### 3. Production Build & Preview
 
 Untuk mempaketkan seluruh halaman ke direktori `dist/` dan mengujinya secara lokal:
@@ -75,6 +80,14 @@ Untuk mempaketkan seluruh halaman ke direktori `dist/` dan mengujinya secara lok
 npm run build
 npm run preview
 ```
+
+---
+
+## Referensi & Panduan Agen
+
+- [AGENTS.md](./AGENTS.md) — konvensi, perintah, dan aturan penting saat mengubah kode di repositori ini.
+- [docs/conventions.md](./docs/conventions.md) — konvensi lengkap repository: penamaan folder, struktur modul, CSS, gaya kode, verifikasi, serta aturan commit/branch.
+- Proyek referensi terkait: [nuhptr/react-forge](https://github.com/nuhptr/react-forge).
 
 ---
 

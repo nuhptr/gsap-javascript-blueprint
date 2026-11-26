@@ -21,10 +21,7 @@ export default defineConfig({
                     import.meta.dirname,
                     "src/controlling-tweens/index.html",
                 ),
-                fromAndFromTo: resolve(
-                    import.meta.dirname,
-                    "src/from-and-fromto/index.html",
-                ),
+                fromAndFromTo: resolve(import.meta.dirname, "src/from-and-fromto/index.html"),
                 jsAnimation: resolve(import.meta.dirname, "src/js-animation/index.html"),
                 setMethod: resolve(import.meta.dirname, "src/set-method/index.html"),
                 simpleProject: resolve(import.meta.dirname, "src/simple-project/index.html"),
